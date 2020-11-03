@@ -3,9 +3,9 @@ Code for "Learning to Generalise in Sparse Reward Navigation Environments" to be
 
 **Dependancies**
 
--Python
+- Python
 
--Unity ML-Agents refer to https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Installation.md for installation instructions
+- Unity ML-Agents refer to https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Installation.md for installation instructions
 
 To install the python package run:
 
