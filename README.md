@@ -1,6 +1,8 @@
 # Learning-to-Generalise-in-Sparse-Reward-Navigation-Environments
 Code for *Learning to Generalise in Sparse Reward Navigation Environments* to be pubished in *SACAIR 2020 Springer CCIS*
 
+WINDOWS NOT LINUX!!!
+
 **Dependancies**
 
 - Python
@@ -23,6 +25,8 @@ Code was tested on ml-agents version 0.16.0.
 
 > mlagents-learn config/myconfig.yaml  --env=env/Environment --run-id=<run-identifier> --env-args=CURRICULUM
 
+--curriculum=config/curricula/rollerBallCurriculum.yaml
+
 - Hypeparameters can be adjusted in myconfig.yaml
 
 - --env refers to the location of the environment executable
@@ -44,3 +48,5 @@ Code was tested on ml-agents version 0.16.0.
     - String must contain "RAY_DIRECTED" to reward agents for moving in the direction of open rays i.e. with no obstacles in said direction
 
     - String must contain "DISTANCE_DIRECTED" to reward agents for moving closer to the target
+    
+**Testing**
