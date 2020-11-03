@@ -56,7 +56,7 @@ Code was tested on ml-agents version 0.16.0 so we recommend running
 
 - Use the mlagents-learn command
 
-> mlagents-learn config/config.yaml  --env=env/Environment --run-id=<run-identifier> --curriculum=config/curricula/curriculum.yaml --env-args=TEST_OBSTACLE_ENV
+> mlagents-learn config/config.yaml  --env=env/Environment --run-id=<run-identifier> --curriculum=config/curricula/curriculum.yaml --env-args=TEST_TRAIN_ENV
   
   - String must contain "TEST" to specify testing mode to evaluate pretrained models. (Default mode is training mode)
   
