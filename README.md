@@ -1,7 +1,7 @@
 # Learning-to-Generalise-in-Sparse-Reward-Navigation-Environments
 Code for *Learning to Generalise in Sparse Reward Navigation Environments* to be pubished in *SACAIR 2020 Springer CCIS*
 
-WINDOWS NOT LINUX!!!
+Note that the environments here run on **Windows**. The algorithms from the paper were run on a high performance computer (https://www.chpc.ac.za/) on a Linux environment.
 
 **Dependancies**
 
@@ -60,21 +60,21 @@ Code was tested on ml-agents version 0.16.0 so we recommend running
   
   - String must contain "TEST" to specify testing mode to evaluate pretrained models. (Default mode is training mode)
   
-  -Thereafter, additional parameters need to be specified. The environment sets need to be specified:
+  - Thereafter, additional parameters need to be specified. The environment sets need to be specified:
 
-    - String must contain "OBSTACLE_ENV" to evaluate on the obstacle environments
+    - String must contain "TRAIN_ENV" to evaluate on the *training* environments
 
-    - String must contain "TRAIN_ENV" to evaluate on the obstacle environments
+    - String must contain "STANDARD_ORIENTATION_ENV" to evaluate on the *standard orientation* environments
 
-    - String must contain "STANDARD_ORIENTATION_ENV" to evaluate on the obstacle environments
+    - String must contain "STANDARD_NEW_ENV" to evaluate on the *standard new* environments
 
-    - String must contain "STANDARD_NEW_ENV" to evaluate on the obstacle environments
-
-    - String must contain "DIFFICULT_ORIENTATION_ENV" to evaluate on the obstacle environments 
+    - String must contain "DIFFICULT_ORIENTATION_ENV" to evaluate on the *difficult orientation* environments 
+    
+    - String must contain "DIFFICULT_NEW_ENV" to evaluate on the *difficult new* environments 
   
-  - The testing mode can be specified
+  - The testing mode can be specified:
   
-    - String can contain "RANDOM" to sample enviroments from the specified category randomly
+    - String can contain "RANDOM" to sample enviroments from the specified category randomly, as per the paper
 
     - String must contain "SEQUENTIAL" to sample enviroments from the specified category sequentially
   
