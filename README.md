@@ -11,6 +11,10 @@ To install the python package run:
 
 > pip3 install mlagents
 
+Code was tested on ml-agents version 0.16.0.
+
+> pip3 install mlagents==0.16.0
+
 **Training**
 
 - Unzip Environment.Zip
