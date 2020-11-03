@@ -21,7 +21,7 @@ Code was tested on ml-agents version 0.16.0.
 
 - Train agents using the mlagents-learn command: Refer to https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-Configuration-File.md for further details
 
-> mlagents-learn config/myconfig.yaml  --env=env/TEMP/TestFixedRoller --run-id=<run-identifier> --env-args=FIXED_CURIOSITY
+> mlagents-learn config/myconfig.yaml  --env=env/Environment --run-id=<run-identifier> --env-args=CURRICULUM
 
 - Hypeparameters can be adjusted in myconfig.yaml
 
@@ -33,7 +33,7 @@ Code was tested on ml-agents version 0.16.0.
 
   - Specify the training algorithm i.e. curriculum, curiosity or hybrid
 
-    - String must contain "CURRICULUM" for training under the curriculum setting 
+    - String must contain "CURRICULUM" (any case) for training under the curriculum setting 
 
     - String must contain "CURIOSITY" for training under the curiosity setting 
 
