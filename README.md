@@ -1,5 +1,5 @@
 # Learning-to-Generalise-in-Sparse-Reward-Navigation-Environments
-Code for "Learning to Generalise in Sparse Reward Navigation Environments" to be pubished in SACAIR 2020 Springer CCIS
+Code for *Learning to Generalise in Sparse Reward Navigation Environments* to be pubished in *SACAIR 2020 Springer CCIS*
 
 **Dependancies**
 
@@ -25,16 +25,18 @@ To install the python package run:
 
 - --run-id allocates a unique training ID
 
-- --env-args allows for the specification of custom training settings i..e to train using one of the 3 algorihtms (curriculum, curiosity and hybrid)
+- --env-args allows for the specification of custom training settings 
 
-  - String must contain "CURRICULUM" for training under the curriculum setting 
+  - Specify the training algorithm i.e. curriculum, curiosity or hybrid
 
-  - String must contain "CURIOSITY" for training under the curiosity setting 
+    - String must contain "CURRICULUM" for training under the curriculum setting 
 
-  - String must contain "CURIOSITY_CURRICULUM" for training under the hybrid setting 
+    - String must contain "CURIOSITY" for training under the curiosity setting 
 
-- Additionally, reward shaping may be used
+    - String must contain "CURIOSITY_CURRICULUM" for training under the hybrid setting 
 
-  - String must contain "RAY_DIRECTED" to reward agents for moving in the direction of open rays i.e. with no obstacles in said direction
+  - Additionally, reward shaping may be used
 
-  - String must contain "DISTANCE_DIRECTED" to reward agents for moving closer to the target
+    - String must contain "RAY_DIRECTED" to reward agents for moving in the direction of open rays i.e. with no obstacles in said direction
+
+    - String must contain "DISTANCE_DIRECTED" to reward agents for moving closer to the target
