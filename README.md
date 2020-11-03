@@ -21,17 +21,17 @@ Code was tested on ml-agents version 0.16.0 so we recommend running
 
 **Training**
 
+- Hypeparameters can be adjusted in config/config.yaml. **NB:** Place config/config.yaml in *HOME*/ folder 
+
 - Train agents using the mlagents-learn command: Refer to https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-Configuration-File.md for further details
 
 > mlagents-learn config/config.yaml  --env=env/Environment --run-id=<run-identifier> --env-args=CURIOSITY
 
-- To train using the curriculum, specify the location of the curriculum file with the --curriculum arg. Place curiculua/curriculum.yaml in *HOME*/ folder 
+- To train using the curriculum, specify the location of the curriculum file with the --curriculum arg. **NB:** Place curiculua/curriculum.yaml in *HOME*/ folder 
 
 > mlagents-learn config/config.yaml  --env=env/Environment --run-id=<run-identifier> --curriculum=config/curricula/curriculum.yaml --env-args=CURRICULUM
 
-- Hypeparameters can be adjusted in config/config.yaml. Place config/config.yaml in *HOME*/ folder 
-
-- **--env** refers to the location of the environment executable. Unzip Environment.zip and place contents in *HOME*/env/ 
+- **--env** refers to the location of the environment executable. **NB:** Unzip Environment.zip and place contents in *HOME*/env/ 
 
 - **--run-identifier** allocates a unique identifier for the run
 
@@ -52,7 +52,7 @@ Code was tested on ml-agents version 0.16.0 so we recommend running
     - String must contain "DISTANCE_DIRECTED" to reward agents for moving closer to the target
     
 **Testing**
-- To run in inference mode, copy the pretrained models to *HOME*/models/
+- **NB:** To run in inference mode, copy the pretrained models to *HOME*/models/
 
 - Use the mlagents-learn command
 
