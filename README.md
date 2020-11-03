@@ -19,7 +19,7 @@ To install the python package run:
 
 > mlagents-learn config/myconfig.yaml  --env=env/TEMP/TestFixedRoller --run-id=<run-identifier> --env-args=FIXED_CURIOSITY
 
--Hypeparameters can be adjusted in myconfig.yaml
+- Hypeparameters can be adjusted in myconfig.yaml
 
 - --env refers to the location of the environment executable
 
@@ -27,14 +27,14 @@ To install the python package run:
 
 - --env-args allows for the specification of custom training settings i..e to train using one of the 3 algorihtms (curriculum, curiosity and hybrid)
 
-- string must contain "CURRICULUM" for training under the curriculum setting 
+  - String must contain "CURRICULUM" for training under the curriculum setting 
 
-- string must contain "CURIOSITY" for training under the curiosity setting 
+  - String must contain "CURIOSITY" for training under the curiosity setting 
 
-- string must contain "CURIOSITY_CURRICULUM" for training under the hybrid setting 
+  - String must contain "CURIOSITY_CURRICULUM" for training under the hybrid setting 
 
 - Additionally, reward shaping may be used
 
-- string must contain "RAY_DIRECTED" to reward agents for moving in the direction of open rays i.e. with no obstacles in said direction
+  - String must contain "RAY_DIRECTED" to reward agents for moving in the direction of open rays i.e. with no obstacles in said direction
 
-- string must contain "DISTANCE_DIRECTED" to reward agents for moving closer to the target
+  - String must contain "DISTANCE_DIRECTED" to reward agents for moving closer to the target
